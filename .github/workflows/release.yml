@@ -35,12 +35,12 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git clean -f
-        git checkout origin/test-master
+        git checkout test-master
         git merge origin/test-review
         npm run build
         git add .
         git commit -m "Add built files"
     - name: Push changes
-      uses: ad-m/github-push-action@test-master
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
