@@ -37,7 +37,7 @@ jobs:
         git clean -f
         git checkout test-master
         git pull origin test-master
-        git merge test-review
+        git merge origin/test-review
         npm run build
         git add .
         git commit -m "Add built files"
