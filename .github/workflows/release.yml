@@ -41,6 +41,6 @@ jobs:
         git add .
         git commit -m "Add built files"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@test-master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
