@@ -35,9 +35,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git clean -f
-        git checkout origin/test-master
-        git pull origin/test-master
-        git merge origin/test-review
+        git checkout test-master
+        git pull origin test-master
+        git merge test-review
         npm run build
         git add .
         git commit -m "Add built files"
