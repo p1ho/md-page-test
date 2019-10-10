@@ -36,6 +36,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git clean -f
         git checkout origin/test-master
+        git pull origin/test-master
         git merge origin/test-review
         npm run build
         git add .
